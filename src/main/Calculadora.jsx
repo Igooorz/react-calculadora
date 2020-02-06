@@ -20,23 +20,23 @@ export default class Calculadora extends Component {
         return (
             <div className="calculadora">
                 <Display value={0} />
-                <Botao value="AC" click={this.limpaMemoria}/>
-                <Botao value="/"/>
-                <Botao value="7"/>
-                <Botao value="8"/>
-                <Botao value="9"/>
-                <Botao value="*"/>
-                <Botao value="4"/>
-                <Botao value="5"/>
-                <Botao value="6"/>
-                <Botao value="-"/>
-                <Botao value="1"/>
-                <Botao value="2"/>
-                <Botao value="3"/>
-                <Botao value="+"/>
-                <Botao value="0"/>
-                <Botao value="."/>
-                <Botao value="="/>
+                <Botao value="AC" click={this.limpaMemoria} triple/>
+                <Botao value="/" click={this.setOperation} operation/>
+                <Botao value="7" click={this.addDigito}/>
+                <Botao value="8" click={this.addDigito}/>
+                <Botao value="9" click={this.addDigito}/>
+                <Botao value="*" click={this.setOperation} operation/>
+                <Botao value="4" click={this.addDigito}/>
+                <Botao value="5" click={this.addDigito}/>
+                <Botao value="6" click={this.addDigito}/>
+                <Botao value="-" click={this.setOperation} operation/>
+                <Botao value="1" click={this.addDigito}/>
+                <Botao value="2" click={this.addDigito}/>
+                <Botao value="3" click={this.addDigito}/>
+                <Botao value="+" click={this.setOperation} operation/>
+                <Botao value="0" click={this.addDigito} double/>
+                <Botao value="." click={this.addDigito}/>
+                <Botao value="=" click={this.setOperation} operation/>
             </div>
         )
     }
